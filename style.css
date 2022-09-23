@@ -1,0 +1,184 @@
+
+:root {
+    --coffe: #342619;
+    --creme: #fef5e5;
+    --rose: #e3bbe3;
+    --latte: #e0caa5;
+    --background: #f8f4e9;
+}
+
+* {
+    margin: 0;
+}
+
+html, 
+body {
+    height: 100%;
+    background-color: var(--background);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#logo {
+    width: 250px;
+}
+
+p {
+    margin: 0.5em 0 0.5em 0;
+}
+
+header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:var(--rose);
+    padding: 10px;
+}
+
+nav a:visited, 
+nav a:link {
+    color: var(--creme);
+    text-decoration: none;
+}
+
+nav > ul {
+    display: inline;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+main {
+    display: block;
+    background-image: url("images/wallpaper.jpg");
+    padding-top: 3em;
+    padding-bottom: 3em;
+    min-height: 85%;
+}
+
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:var(--latte);
+    padding: 10px;
+}
+
+footer img {
+    width: 1em;
+}
+
+footer > nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+aside, 
+article {
+    padding: 2em;
+}
+
+aside {
+    text-align: center;
+}
+
+article {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.box {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--creme);
+    border: solid 2px var(--coffe);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.columns {
+    display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+    }
+
+    aside {
+        margin-top: 2%;
+        margin-left: 2%;
+    }
+
+    article {
+        max-width: 60%;
+    }
+}
+
+/* Products */
+
+.product {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--creme);
+    border: solid 2px var(--coffe);
+    border-radius: 5px;
+}
+
+.product .title {
+    font-weight: bold;
+}
+
+.product .columns {
+    width: 100%;
+}
+
+.product .price {
+    text-align: right;
+}
+
+.product .columns div {
+    width: 50%;
+}
+
+.product .button {
+    text-align: center;
+}
+
+.product button {
+    background-color: var(--rose);
+    margin-top: 1em;
+    padding: 6px 8px;
+    border: solid 2px var(--coffe);
+    border-radius: 3px;
+    color: var(--coffe);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
